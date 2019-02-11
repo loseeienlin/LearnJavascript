@@ -216,6 +216,7 @@ http://www.templatemo.com/tm-508-power
                                             <div class="col-md-6">
                                                 <div class="left-text">
                                                     <h4>獨特的想法</h4>
+                                                    <form>請輸入文字：<input type="text" name="欄位名稱"></form><!-- 準備把輸入的文字放到後台 -->
                                                     <p>目前還沒有，下面的Download也還沒有設計要放甚麼。</p>
                                                     <div class="primary-button">
                                                         <a href="#contact-us">Download Now</a>
@@ -332,6 +333,7 @@ http://www.templatemo.com/tm-508-power
                 <div class="row">
             <div>
             <p>準備給Java script</p>
+                <!--
             <p id="print_1">用來互動的內容_0001</p>
             <button type="button" onclick="click_1();">對用來互動的內容_0001作變化</button>
             <button type="button" onclick="click_2();">變回來</button>
@@ -340,7 +342,7 @@ http://www.templatemo.com/tm-508-power
             </script>
             <p>用來互動的內容_0002</p>
             <p>用來互動的內容_0003</p>
-                <script>
+                 <script>
                     //alert("歡迎來到阿良的網站");
                     document.write("以下將開始一些互動式程式")
                     document.write("<div>");
@@ -357,7 +359,19 @@ http://www.templatemo.com/tm-508-power
                         var title = document.getElementById("print_1");
                         title.innerHTML = "用來互動的內容_0001"
                     }
-                </script>
+                </script> 
+                 -->
+                <p>
+                <button type="button" onclick="document.getElementById('real_time').innerHTML = Date()">顯示日期與時間</button><!--指定一個按鈕，如果按下去，抓取一個id叫做'time'的物件，並讓它=Date()這個函數，這個=，是電腦語言裡的= (assign)的意思 -->
+                <button type="button" onclick="document.getElementById('real_time');real_time.innerHTML =''">不顯示日期與時間了</button>
+                </p>
+                <!-- <button type="button" onclick="document.getElementById('real_time').style.display='none'">除非重新刷網頁，否則不需要顯示時間了</button> -->              
+                <p id="real_time"></p>
+                <button type="button" onclick="document.getElementById('print_0001').innerHTML='顯示一些東西的語法'">按下我可以改變顯示一些東西。</button>
+                <p id="print_0001">按下上面那顆鍵，我會被改掉。</p>
+                <p><button onclick="document.getElementById('image_0001').src='img/Stand_0001.gif'">停止攻擊</button><button onclick="document.getElementById('image_0001').src='img/Attack_0001.gif'">開始攻擊</button></p>
+                <img id="image_0001" src="img/Attack_0001.gif" style="width: 250px">
+                
             </div>
                 </div>
             </div>
