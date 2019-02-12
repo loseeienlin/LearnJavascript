@@ -272,6 +272,11 @@ http://www.templatemo.com/tm-508-power
                                                                 <th><a href="http://8comic.se/"target="_blank">漫畫</a></th>
                                                                 <th><a href="https://www.gamer.com.tw/"target="_blank">巴哈姆特</a></th>
                                                             </tr>
+                                                            <tr>
+                                                                <td><a href="https://www.w3schools.com/js/js_statements.asp"target="_blank">W3School</a></td>
+                                                                <td><a href="https://www.google.com/search?q=%E7%BF%BB%E8%AD%AF&oq=%E7%BF%BB%E8%AD%AF&aqs=chrome..69i57j69i61j0l4.3079j0j7&sourceid=chrome&ie=UTF-8"target="_blank">Google翻譯</a></td>
+                                                            </tr>
+                                                            
                                                         </tbody>
                                                         </table>
                                                     </p>
@@ -362,6 +367,10 @@ http://www.templatemo.com/tm-508-power
                 </script> 
                  -->
                 <p>
+                <script>function getRandom(min,max){return Math.floor(Math.random()*(max-min+1))+min;};</script>
+                <script>function image_gif_0001() {document.getElementById("image_0001").src="img/Attack_0001.gif"};</script>
+                <script>function myFunction() {document.getElementById("demo1").innerHTML = "Hello Dolly!";document.getElementById("demo2").innerHTML = "How are you?";} //可以讓一個指令產生兩個結果 </script>    
+                <script>document.getElementById("hurt_0001").innerHTML = getRandom(1,10);</script>
                 <button type="button" onclick="document.getElementById('real_time').innerHTML = Date()">顯示日期與時間</button><!--指定一個按鈕，如果按下去，抓取一個id叫做'time'的物件，並讓它=Date()這個函數，這個=，是電腦語言裡的= (assign)的意思 -->
                 <button type="button" onclick="document.getElementById('real_time');real_time.innerHTML =''">不顯示日期與時間了</button>
                 </p>
@@ -369,9 +378,23 @@ http://www.templatemo.com/tm-508-power
                 <p id="real_time"></p>
                 <button type="button" onclick="document.getElementById('print_0001').innerHTML='顯示一些東西的語法'">按下我可以改變顯示一些東西。</button>
                 <p id="print_0001">按下上面那顆鍵，我會被改掉。</p>
-                <p><button onclick="document.getElementById('image_0001').src='img/Stand_0001.gif'">停止攻擊</button><button onclick="document.getElementById('image_0001').src='img/Attack_0001.gif'">開始攻擊</button></p>
-                <img id="image_0001" src="img/Attack_0001.gif" style="width: 250px">
+                <p><button onclick="document.getElementById('image_0001').src='img/Stand_0001.gif'" >停止攻擊</button><button onclick="document.getElementById('image_0001').src='img/Attack_0001.gif'" >開始攻擊</button></p>
+                <img id="image_0001" src="img/Stand_0001.gif" style="width: 250px">
+                <p><button type="button" onclick="document.getElementById('hurt_0001').innerHTML = getRandom(1,10);image_gif_0001()">顯示1~10亂數</button></p><font color="white"><p id="hurt_0001" ></p></font>
+                <!-- <button type="button" onclick="myFunction()">Click Me!</button><p id="demo1"></p><p id="demo2"></p> -->
+                <!-- 開始使用變數來執行程式 -->
+                <p id="variant_0001"></p>
+                <!-- <script>
+                    var x, y, z;  // Statement 1
+                    x = getRandom(1,10);    // Statement 2
+                    y = getRandom(1,10);    // Statement 3
+                    z = x + y;  // Statement 4
+                    document.getElementById("variant_0001").innerHTML =
+                        "The value of z is " + z + ".";  
+                    </script> -->
                 
+                
+
             </div>
                 </div>
             </div>
@@ -442,10 +465,13 @@ http://www.templatemo.com/tm-508-power
                                         <h4>第一筆記錄</h4>
                                         <ul class="info-post">
                                             <li><i class="fa fa-user"></i>阿良</li>
-                                            <li><i class="fa fa-calendar"></i>2019 02 09</li>
+                                            <li><i class="fa fa-calendar"></i>2019 02 12</li>
                                             <li><i class="fa fa-wechat"></i>0 Comments</li>
                                         </ul>
-                                        <p>沒有內容</p>
+                                        <p>不管是chome、safari、firefox或是Edge，他們這些瀏覽器(Browser)都有引擎(解譯器)，用來解讀電腦語言，轉換成機器語言，來驅動電腦，chome和safari用的是V8引擎。</p>
+                                        <p>瀏覽器是由Html、Javascript、CSS堆疊(stack)起來的，Html是標籤語言，頭尾各有一個標籤，CSS是提供給Html使用的一些樣式，Javascript用來變化內容。</p>
+                                        <p>Javascript有一個函式庫，叫做jQuery。原本Javascript的語法比較長如：document.getElementById("被標記的元件")，可以使用較簡便的語法$("被標記的元件").("做甚麼事").("接著做甚麼事").("一直做下去")</p>
+                                        <p>在Html中，DOM指的是Document_Object_model，可以想像一棵樹，最上面是Html這個文件(Document)，長出兩條根，分別是(head)跟(body)這兩個物件(Object)，接下來head裡面會有一些如meta、title或script等內容，body裡面會有各種標籤、套用的style以及內文，指的是架構這些的模型。</p>
                                         <div class="primary-button"><a href="#contact-us">Continue Reading</a></div>
                                     </div>
                                 </div>
