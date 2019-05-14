@@ -41,18 +41,22 @@
         </p>
       </div>
       <div id="siderbar_right">
-        <iframe height="100px" width="100%" src="./images/googleLOGO.jpg" name="iframe_b"></iframe>
-        <p><a href="https://www.google.com/search?q=google%E7%BF%BB%E8%AD%AF&oq=goog&aqs=chrome.2.69i57j0l2j69i60j69i65j0.3837j0j8&sourceid=chrome&ie=UTF-8" target="iframe_b">google翻譯</a></p>
-        <p><a href="https://www.gamer.com.tw/">巴哈姆特</a></p>
-        <p><a href="http://8comic.se/">YYLS漫畫</a></p>
-        <p><a href="https://www.facebook.com/"">臉書</a></p>
-      </div>      
-      <div>
-          <button type="button" class="btn btn-outline-info"><a href="https://www.google.com/search?q=google%E7%BF%BB%E8%AD%AF&oq=goog&aqs=chrome.2.69i57j0l2j69i60j69i65j0.3837j0j8&sourceid=chrome&ie=UTF-8" target="iframe_b">google翻譯</a></button>
-          <button type="button" class="btn btn-outline-info"><a href="https://www.w3schools.com/" target="iframe_a">W3Schools.com</a></button>
+        <script>function getRandom(min,max){return Math.floor(Math.random()*(max-min+1))+min;};</script>
+        <script>function image_gif_0001() {document.getElementById("image_0001").src="./images/Attack_0001.gif"};</script>
+        <p>
+          <button onclick="document.getElementById('image_0001').src='./images/Stand_0001.gif'" >停止攻擊</button>
+          <button onclick="document.getElementById('image_0001').src='./images/Attack_0001.gif'" >開始攻擊</button>
+        </p>
+        <img id="image_0001" src="./images/Stand_0001.gif" style="width: 250px">
+        <p>
+          <button type="button" onclick="document.getElementById('hurt_0001').innerHTML = getRandom(1,10);image_gif_0001()">顯示1~10亂數</button>
+        </p>
+        <font color="white"><p id="hurt_0001"></p></font>
+         <p><img src="./images/mark50.png" alt="mark50" width="100%" height="100%"></p>
+
       </div>
-      <div>
-          <iframe height="800px" width="70%" src="./images/W3S.png" name="iframe_a"></iframe>
-      </div>  
+    <div>
+      <h1>網頁建構中，還沒想好要放什麼。</h1>
+    </div>
   </body>
 </html>
