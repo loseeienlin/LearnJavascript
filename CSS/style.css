@@ -4,6 +4,9 @@ h1 {
 h2 {
     color: black; font-family: "微軟正黑體";
 }
+h3 {
+    color: white; font-family: "微軟正黑體"; background-color: blueviolet;
+}
 p {
     color: black; font-family: "微軟正黑體";
 } 
@@ -21,7 +24,7 @@ table {
 #siderbar_left{
     background-color: black;
     width: 15%;
-    height: 800px;
+    height: 10000px;
     text-align:center;
     line-height: 20px;
     float:left;
@@ -29,7 +32,7 @@ table {
 #siderbar_right{
     background-color: black;
     width: 15%;
-    height: 800px;
+    height: 10000px;
     text-align:center;
     line-height: 20px;
     float:right;

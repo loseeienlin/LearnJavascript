@@ -47,7 +47,7 @@
           <button onclick="document.getElementById('image_0001').src='./images/Stand_0001.gif'" >停止攻擊</button>
           <button onclick="document.getElementById('image_0001').src='./images/Attack_0001.gif'" >開始攻擊</button>
         </p>
-        <img id="image_0001" src="./images/Stand_0001.gif" style="width: 250px">
+        <img id="image_0001" src="./images/Stand_0001.gif" style="width: 200px">
         <p>
           <button type="button" onclick="document.getElementById('hurt_0001').innerHTML = getRandom(1,10);image_gif_0001()">顯示1~10亂數</button>
         </p>
@@ -57,7 +57,30 @@
       </div>
     <div>
       <img src="./images/john.jpg" alt="John_Wick" width="70%" ></p>      
-      <h2>網頁建構中，還沒想好要放什麼。</h2>
+      <h2>奉師父指示，現在開始到6月底，只練emmet，以下主要內容都在練emmet。</h2>
     </div>
+    <h3>第一招：Child：></h3>
+    <div>nav>ul>li</div>
+    <nav>
+      <ul>創建list
+        <li>list</li>
+        <li>list</li>
+      </ul>
+    </nav>
+    <h3>第二招：Sibling：+</h3>
+    <div>div+p+bq</div>
+    <div>這是div的內容</br>HTML < div > 元素是塊級元素，它是可用於组合其他 HTML 元素的容器。< div > 元素没有特定的含意。除此之外，由於它属於塊級元素，瀏覽器會在其前後執行折行。如果與 CSS 一同使用，< div > 元素可用對大型的塊狀內容設置屬性。< div > 元素的另一個用法是取代 < table > 進行網頁布局，用 < table > 元素進行網頁布局不是正確的用法。< table > 元素的作用是顯示表格化的數據。</div>
+    <p>這是p的內容</br>段落是通過 < p > 標簽定義的。</p>
+    <blockquote>這是bq─blockquote的內容</br>
+      < blockquote > 與 < /blockquote > 之間所有的文本都會從塊狀文本中分離出來，經常會在左右兩邊進行縮進（空出間格），而且有時候會使用斜體。也就是說，塊引用有屬於它們自己的空間。
+    </blockquote>
+      <h3>第三招：climb-up：^</h3>
+      <div>div+div>p>span+em*bq</div>
+      <div>這是div的內容
+        <p>這是p的內容
+          <span>這是span的內容</span><em>這是em的內容</em>
+          <blockquote>這是blockquote的內容</blockquote>
+        </p>
+      </div>
   </body>
 </html>
